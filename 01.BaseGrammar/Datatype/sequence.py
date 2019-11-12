@@ -40,3 +40,13 @@ print(dict["Age"])
 del dict["b"]  # 删除键“b”
 # dict.clear #清空字典
 # del dict #删除整个字典
+
+# 快速的创建字典和序列
+# 从1到10 所有偶数的平方的序列
+blist = [i*i for i in range(1, 11) if (i % 2) == 0]
+print(blist)
+
+# 生肖字典
+zodiac = "猴鸡狗猪鼠牛虎兔龙蛇马羊"
+z_num = {i: 0 for i in zodiac}
+print(z_num)
