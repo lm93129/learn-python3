@@ -7,3 +7,9 @@ file2 = open("name.txt")  # 默认为只读权限
 
 for line in file2.readlines():
     print(line)
+
+# 使用with来打开文件可以自动处理错误和关闭文件
+with open("name.txt", "a") as f:
+    print(f)
+    # 手动产生一个错误
+    raise NameError("名称错误")
